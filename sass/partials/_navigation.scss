@@ -1,0 +1,90 @@
+/* *** NAVIGATION *** */
+
+.navigation {
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
+
+.toggler {
+    position: fixed;
+    top: 1.6rem;
+    right: 1.6rem;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgb(241, 239, 237);
+    border-radius: 50%;
+    z-index: 10000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all .1s;
+
+    span,
+    span::before,
+    span::after {
+        display: block;
+        background: #141211;
+        height: 3px;
+        width: 1.5rem;
+        border-radius: 3px;
+        position: relative;
+        right: .05rem;
+    }
+
+    span::before,
+    span::after {
+        content: '';
+        position: absolute;
+    }
+
+    span {
+        width: 1.4rem;
+    }
+
+    span::before {
+        bottom: 9px;
+        width: 1.18rem;
+    }
+
+    span::after {
+        top: 9px;
+        width: 1.18rem;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(244, 246, 248, 0.993);
+
+        span,
+        span::before,
+        span::after {
+            background: rgb(151, 151, 216);
+        }
+    }
+}
+
+@include tablet {
+    .toggler {
+        top: 2rem;
+        right: 2rem;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    span,
+    span::before,
+    span::after {
+        height: 4px;
+        width: 1.8rem;
+    }
+
+    span::before {
+        bottom: 11px;
+    }
+
+    span::after {
+        top: 11px;
+    }
+}

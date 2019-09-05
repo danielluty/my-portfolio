@@ -1,0 +1,31 @@
+/* *** GENERAL *** */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    opacity: 0;
+    transition: 1s;
+    background: rgb(173, 173, 218);
+    font-family: $main-font;
+}
+
+h1 {
+    font-family: $header-font;
+}
+
+section {
+    min-height: 400px;
+    padding-top: 2rem;
+}
+
+main, footer {
+    display: none;
+}
