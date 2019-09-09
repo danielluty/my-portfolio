@@ -1,6 +1,6 @@
 /* Helpers */
 @import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Enriqueta|Open+Sans&display=swap");
 /* *** VARIABLES *** */
 /* Colors */
 /* Fonts */
@@ -16,6 +16,9 @@ html, body {
   height: 100%;
   width: 100%; }
 
+a {
+  text-decoration: none; }
+
 body {
   opacity: 0;
   -webkit-transition: 1s;
@@ -24,7 +27,6 @@ body {
   background: #adadda;
   color: #f0f0f0;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
   line-height: 1.5; }
 
 h1 {
@@ -34,17 +36,22 @@ h2 {
   font-size: 2.2rem;
   line-height: 2.2rem; }
 
-h1, h2 {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase; }
+h3 {
+  font-size: 1.7rem; }
+
+h1, h2, h3, h4 {
+  font-family: "Enriqueta", serif;
+  text-transform: uppercase;
+  text-align: center; }
 
 section, footer {
   min-height: 400px;
   padding: 4.375rem 1.3rem;
   line-height: 1.8rem;
   border-top: 2px solid white; }
-  section h1, section h2, footer h1, footer h2 {
-    text-align: center; }
+
+ul {
+  list-style: none; }
 
 img {
   max-width: 100%; }
@@ -52,7 +59,12 @@ img {
 .caption {
   text-align: center;
   margin-bottom: 1.2rem;
-  color: #7b7b7b; }
+  position: relative; }
+  .caption::after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: .4rem; }
 
 /* *** NAVIGATION *** */
 .navigation {
@@ -166,9 +178,10 @@ img {
     position: absolute;
     left: 1.6rem;
     top: 1.6rem;
-    padding: .6rem .6rem .3rem;
+    padding: .2rem .6rem .3rem;
     font-size: 2rem;
     font-weight: bolder;
+    font-family: "Enriqueta", serif;
     -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.55);
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.55); }
     .header .logo--header .span-1 {
@@ -209,16 +222,10 @@ img {
         animation: header3 3.5s ease-in 1;
         font-size: 1.3rem; }
       .header .header-container span.header-part-4 {
-        -webkit-animation: header4 4.5s ease-in 1 forwards;
-        animation: header4 4.5s ease-in 1 forwards;
+        -webkit-animation: header4 5s ease-in 1 forwards;
+        animation: header4 5s ease-in 1 forwards;
         font-style: italic;
         top: .5rem; }
-      .header .header-container span.header-part-5 {
-        -webkit-animation: header5 5.5s ease-in 1 forwards;
-        animation: header5 5.5s ease-in 1 forwards;
-        font-style: italic;
-        font-weight: light;
-        text-align: right; }
 
 @-webkit-keyframes header1 {
   0% {
@@ -375,20 +382,6 @@ img {
   85% {
     opacity: 0; }
   100% { } }
-
-@-webkit-keyframes header5 {
-  0% {
-    opacity: 0; }
-  85% {
-    opacity: 0; }
-  100% { } }
-
-@keyframes header5 {
-  0% {
-    opacity: 0; }
-  85% {
-    opacity: 0; }
-  100% { } }
   .header .social--header {
     position: absolute;
     left: 50%;
@@ -426,7 +419,7 @@ img {
     font-size: 1.6rem;
     border: 1px solid rgba(255, 255, 255, 0.95);
     border-radius: 55px;
-    padding: .8rem 1.2rem; }
+    padding: .8rem 1.3rem .7rem; }
     .header button:hover {
       background: rgba(255, 255, 255, 0.95);
       color: rgba(0, 0, 0, 0.842); }
@@ -436,26 +429,53 @@ img {
   color: #555; }
   .intro h2 {
     color: #000; }
+  .intro .caption {
+    color: #7b7b7b; }
   .intro p {
-    margin-bottom: 2rem; }
+    margin-bottom: 1.5rem; }
   .intro img {
     display: block;
     border-radius: 50%;
     width: 50%;
-    margin: 0 auto; }
+    margin: 2rem auto; }
+
+.skills h3 {
+  margin-bottom: 1.3rem; }
+
+.skills h4 {
+  margin-top: 2rem; }
 
 .skills ul {
-  margin-bottom: 1.3rem; }
+  padding: 0; }
+
+.skills ul:first-of-type {
+  margin-bottom: 2rem; }
+  .skills ul:first-of-type li .devicon-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .skills ul:first-of-type li .devicon-cont img {
+      width: 4rem;
+      margin: 1rem; }
 
 .work {
   background: #8585d6;
   position: relative;
   z-index: 2; }
+  .work .caption {
+    color: #d7d7d7; }
+  .work figure img {
+    display: block; }
   .work figure figcaption {
     text-align: center;
     background-color: #f0f0f0;
     color: black;
-    padding: .7rem; }
+    padding: .7rem;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem; }
 
 .contact {
   background: #5454d1;
