@@ -18,4 +18,19 @@ navItems.forEach(el => {
     })
 });
 
+
+
+/** Changing toggler on scroll */
+
+(() => {
+    window.addEventListener('scroll', () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = window.scrollY;
+        console.log(scrolled);
+        console.log(scrollable);
+    });
+})();
+
+
+
 /** Smooth scrolling */
