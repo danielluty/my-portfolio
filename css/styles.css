@@ -58,8 +58,7 @@ button {
 section, footer {
   min-height: 400px;
   padding: 4.375rem 1.3rem;
-  line-height: 1.8rem;
-  border-top: 2px solid white; }
+  line-height: 1.8rem; }
 
 ul {
   list-style: none; }
@@ -99,6 +98,11 @@ img {
   border: 2px solid #f0f0f0;
   padding: .33rem 0 0 .32rem;
   border-radius: .1rem; }
+  .toggler.toggler-light {
+    background: #2A303A;
+    -webkit-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s; }
   .toggler .burger {
     display: inline-block;
     position: relative;
@@ -256,7 +260,7 @@ img {
   left: 1.7rem;
   top: 1.7rem; }
   .logo--header img {
-    width: 55px; }
+    width: 85px; }
 
 .header-container {
   padding: 0 1rem;

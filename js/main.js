@@ -1,4 +1,4 @@
-/* Fade in body */
+`/* Fade in body */
 (() => {
     document.getElementById('body').style.opacity = 1;
 })();
@@ -22,15 +22,9 @@ navItems.forEach(el => {
 
 /** Changing toggler on scroll */
 
-(() => {
-    window.addEventListener('scroll', () => {
-        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = window.scrollY;
-        console.log(scrolled);
-        console.log(scrollable);
-    });
-})();
-
-
 
 /** Smooth scrolling */
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 300,
+    easing: 'easeInOutCubic'
+});

@@ -18,11 +18,11 @@
     <a class="toggler"><span class="burger"></span></a>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#">Header</a></li>
-        <li class="nav__item"><a class="nav__link" href="#about">Me</a></li>
-        <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
-        <li class="nav__item"><a class="nav__link" href="#projects">Work</a></li>
-        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        <li class="nav__item"><a data-scroll class="nav__link" href="#">Header</a></li>
+        <li class="nav__item"><a data-scroll class="nav__link" href="#about">Me</a></li>
+        <li class="nav__item"><a data-scroll class="nav__link" href="#skills">Skills</a></li>
+        <li class="nav__item"><a data-scroll class="nav__link" href="#projects">Work</a></li>
+        <li class="nav__item"><a data-scroll class="nav__link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -30,7 +30,7 @@
   <!-- Header -->
   <header class="header">
     <div class="logo--header">
-      <img src="./img/logo_dl.png" alt="">
+      <img src="./img/logo.svg" alt="">
     </div>
     <h1 class="header-container">
       <span class="header-part-1">Hi, I'm Daniel,</span>
@@ -60,16 +60,16 @@
       <p>Excessive learning and codewriting allow me to improve myself in a
         very fast way. <strong>Java&shy;Script</strong> (incl. ESNext, paradigms etc.),
         <strong>Node</strong> and <strong>React</strong> feel more familiar with each
-         written function. My <strong>HTML, CSS (Sass) and RWD</strong> knowledge is 
-         very solid and I know how to use frameworks like <strong>Bootstrap</strong>.</p>
-      
+        written function. My <strong>HTML, CSS (Sass) and RWD</strong> knowledge is
+        very solid and I know how to use frameworks like <strong>Bootstrap</strong>.</p>
+
       <h3>Moreover:</h3>
       <p>&#62; &#62; <strong>Unix</strong> sympathizer.</p>
       <p>&#62; &#62; Googling in <strong>four languages</strong>.</p>
       <p>&#62; &#62; <strong>Backend</strong> isn't totally alien.</p>
       <p>&#62; &#62; <strong>Empathy</strong> & <strong>humour</strong> neither.</p>
       <p>&#62; &#62; Strong will to develop further.</p>
-      <p>&#62; &#62; <strong>Knowledge-hungry helping hand</strong>.</p>
+      <p>&#62; &#62; <strong>Knowledge-hungry</strong> helping hand.</p>
 
       <p>Absolute passion for the materia and desire for progress provide me energy,
         necessary for spending many hours on developing my skills.</p>
@@ -154,7 +154,7 @@
 
       <ul>
         <li>... furthermore:</li>
-        <li>npm / <strong>Webpack</strong></li>
+        <li><strong>Gulp</strong> / npm / <strong>Webpack</strong></li>
         <li>Slack / <strong>Jira</strong> / Scrum</li>
         <li><strong>VS Code</strong> / Linux (bash)</li>
       </ul>
@@ -213,6 +213,8 @@
     </form>
     <em>&copy; 2019 Daniel Luty</em>
   </footer>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+  </script>
   <script src="./js/main.js"></script>
 </body>
 
