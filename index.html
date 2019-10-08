@@ -28,9 +28,6 @@
 
   <!-- Header -->
   <header class="header">
-    <div class="header__logo">
-      <img src="./img/logo.svg" alt="">
-    </div>
     <h1 class="header-container">
       <span class="header-part-1">Hi, I'm Daniel,</span>
       <span class="header-part-2">a front-end<br />web developer</span>
@@ -41,8 +38,10 @@
       <a href="mailto:danel@danielluty.com" class="contact-btn"><img src="./img/icons/mail.svg" alt=""></a>
       <a href="tel:+48576069443" class="contact-btn"><img src="./img/icons/tel.svg" alt=""></a>
     </div>
-    <button class="header__button"><a href="./cv_daniel_luty.pdf">my_cv.pdf</a></button>
-    <a href="#about"><img src="./img/down-white.svg" alt="" class="downarrow" /></a>
+    <div class="header__buttons">
+      <button><a href="./cv_daniel_luty.pdf">my_cv.pdf</a></button>
+      <a href="#about"><img src="./img/down-white.svg" alt="" class="downarrow" /></a>
+    </div>
   </header>
 
   <!-- Content -->
@@ -91,15 +90,15 @@
         <li>
           <div class="devicon-cont">
             <figure>
-              <img src="./img/devicons/html5-original.svg" alt="HTML" />
+              <img src="./img/icons/html5-original.svg" alt="HTML" />
               <figcaption>HTML</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/css3-original.svg" alt="CSS" />
+              <img src="./img/icons/css3-original.svg" alt="CSS" />
               <figcaption>CSS</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/sass.svg" alt="Sass" />
+              <img src="./img/icons/sass.svg" alt="Sass" />
               <figcaption>Sass</figcaption>
             </figure>
           </div>
@@ -107,15 +106,15 @@
         <li>
           <div class="devicon-cont">
             <figure>
-              <img src="./img/devicons/js.svg" alt="JS" />
+              <img src="./img/icons/js.svg" alt="JS" />
               <figcaption>JavaScript</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/react.svg" alt="React" />
+              <img src="./img/icons/react.svg" alt="React" />
               <figcaption>React</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/jquery-original.svg" alt="jQuery" />
+              <img src="./img/icons/jquery-original.svg" alt="jQuery" />
               <figcaption>jQuery</figcaption>
             </figure>
           </div>
@@ -123,15 +122,15 @@
         <li>
           <div class="devicon-cont">
             <figure>
-              <img src="./img/devicons/rwd.svg" alt="RWD" />
+              <img src="./img/icons/rwd.svg" alt="RWD" />
               <figcaption>RWD</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/bootstrap-plain.svg" alt="Bootstrap" />
+              <img src="./img/icons/bootstrap-plain.svg" alt="Bootstrap" />
               <figcaption>Bootstrap</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/git-plain.svg" alt="Git" />
+              <img src="./img/icons/git-plain.svg" alt="Git" />
               <figcaption>Git</figcaption>
             </figure>
           </div>
@@ -139,11 +138,11 @@
         <li>
           <div class="devicon-cont">
             <figure>
-              <img src="./img/devicons/nodejs-original.svg" alt="Node.js" />
+              <img src="./img/icons/nodejs-original.svg" alt="Node.js" />
               <figcaption>(Node.js)</figcaption>
             </figure>
             <figure>
-              <img src="./img/devicons/express-original.svg" alt="Express.js" />
+              <img src="./img/icons/express-original.svg" alt="Express.js" />
               <figcaption>(Express.js)</figcaption>
             </figure>
           </div>
@@ -155,6 +154,7 @@
         <li><strong>Gulp</strong> / npm / <strong>Webpack</strong></li>
         <li>Slack / <strong>Jira</strong> / Scrum</li>
         <li><strong>VS Code</strong> / Linux (bash)</li>
+        <li>GIMP / <strong>Figma</strong></li>
       </ul>
     </section>
 
@@ -207,11 +207,11 @@
       <label for="name"></label>
       <input type="text" id="name" name="name" placeholder="Your name" />
       <label for="email"></label>
-      <input type="email" id="email" name="email" placeholder="Your email" />
-      <textarea name="message" id="message" cols="30" rows="5" placeholder="Any questions ?"></textarea>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+      <textarea name="message" id="message" cols="30" rows="5" placeholder="Any questions ?" required></textarea>
       <button type="submit">Submit</button>
     </form>
-    <em>&copy; 2019 Daniel Luty</em>
+    <span>&copy; 2019 Daniel Luty</span>
   </footer>
 
   <!-- Scripts -->
