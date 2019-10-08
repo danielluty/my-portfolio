@@ -7,12 +7,15 @@
 /* *** MIXINS *** */
 /* Partials */
 /* *** GENERAL *** */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0; }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%; }
 
@@ -36,7 +39,10 @@ p {
   -ms-hyphens: auto;
   hyphens: auto; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-transform: uppercase;
   text-align: center; }
 
@@ -51,11 +57,28 @@ h3 {
   font-size: 1.7rem; }
 
 button {
+  z-index: 1;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 21%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: transparent;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  border: 2px solid #f0f0f0;
+  border-radius: .1rem;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
 
-section, footer {
+section,
+footer {
   min-height: 400px;
   padding: 4.375rem 1.3rem;
   line-height: 1.8rem; }
@@ -95,9 +118,9 @@ img {
   top: 2rem;
   z-index: 200;
   cursor: pointer;
-  border: 2px solid #f0f0f0;
+  background-color: #f0f0f0;
   padding: .33rem 0 0 .32rem;
-  border-radius: .1rem; }
+  border-radius: 50%; }
   .toggler .burger {
     display: inline-block;
     position: relative;
@@ -272,24 +295,8 @@ img {
       .header__social .contact-btn img {
         min-width: 35px;
         min-height: 35px; }
-  .header__button {
-    z-index: 1;
-    width: 150px;
-    height: 40px;
-    position: absolute;
-    left: 50%;
-    bottom: 21%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background: transparent;
-    font-size: 1rem;
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    border: 2px solid #f0f0f0;
-    border-radius: .1rem; }
-    .header__button a {
-      color: #f0f0f0; }
+  .header__button a {
+    color: #f0f0f0; }
   .header .downarrow {
     cursor: pointer;
     position: absolute;
@@ -461,6 +468,11 @@ img {
     font-size: 1rem;
     margin: 1.7rem 0 .5rem;
     text-align: left; }
+  .about .humour {
+    display: inline-block;
+    -webkit-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg); }
   .about figure {
     margin-bottom: 3rem; }
   .about img {
@@ -563,10 +575,10 @@ img {
     background: linear-gradient(to bottom, #373b44a2, #4286f48c), fixed url("../../img/bg3.jpg") center/cover no-repeat; }
   .footer .caption::after {
     background-color: #f0f0f0; }
-  .footer .social-footer {
+  .footer__social {
     margin: 2rem 0 1.5rem; }
-    .footer .social-footer a {
-      padding: 1rem;
+    .footer__social a {
+      padding: .7rem;
       font-size: 2rem;
       color: white; }
   .footer form {
@@ -585,10 +597,8 @@ img {
       margin: 1rem 0;
       font-family: "Open Sans", sans-serif; }
     .footer form button {
-      padding: .7rem 2rem;
-      margin: 0 auto;
-      max-width: 7rem;
-      border: none; }
+      position: relative;
+      top: 1rem; }
   .footer em {
     position: absolute;
     bottom: 0;
