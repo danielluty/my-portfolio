@@ -36,6 +36,10 @@ p {
   -ms-hyphens: auto;
   hyphens: auto; }
 
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  text-align: center; }
+
 h1 {
   font-size: 2.5rem; }
 
@@ -45,10 +49,6 @@ h2 {
 
 h3 {
   font-size: 1.7rem; }
-
-h1, h2, h3, h4 {
-  text-transform: uppercase;
-  text-align: center; }
 
 button {
   -webkit-transition: all .3s;
@@ -98,11 +98,6 @@ img {
   border: 2px solid #f0f0f0;
   padding: .33rem 0 0 .32rem;
   border-radius: .1rem; }
-  .toggler.toggler-light {
-    background: #2A303A;
-    -webkit-transition: background .5s;
-    -o-transition: background .5s;
-    transition: background .5s; }
   .toggler .burger {
     display: inline-block;
     position: relative;
@@ -244,23 +239,67 @@ img {
     background: -webkit-linear-gradient(bottom, #373b449d, #4286f483), fixed url("../../img/bg.jpg") center/cover no-repeat;
     background: -o-linear-gradient(bottom, #373b449d, #4286f483), fixed url("../../img/bg.jpg") center/cover no-repeat;
     background: linear-gradient(to top, #373b449d, #4286f483), fixed url("../../img/bg.jpg") center/cover no-repeat; }
+  .header__logo {
+    position: absolute;
+    left: 1.7rem;
+    top: 1.7rem; }
+    .header__logo img {
+      width: 85px; }
+  .header__social {
+    position: absolute;
+    left: 50%;
+    bottom: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: "Lato", sans-serif;
+    font-size: 2.1rem;
+    text-align: center;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s; }
+    .header__social .contact-btn {
+      cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 1rem;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.95); }
+      .header__social .contact-btn img {
+        min-width: 35px;
+        min-height: 35px; }
+  .header__button {
+    z-index: 1;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 21%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: transparent;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    border: 2px solid #f0f0f0;
+    border-radius: .1rem; }
+    .header__button a {
+      color: #f0f0f0; }
   .header .downarrow {
     cursor: pointer;
     position: absolute;
     width: 4rem;
     height: 4rem;
     left: 50%;
-    bottom: 12%;
+    bottom: 6%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-
-.logo--header {
-  position: absolute;
-  left: 1.7rem;
-  top: 1.7rem; }
-  .logo--header img {
-    width: 85px; }
 
 .header-container {
   padding: 0 1rem;
@@ -406,31 +445,6 @@ img {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.social--header {
-  position: absolute;
-  left: 50%;
-  bottom: 32%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-family: "Lato", sans-serif;
-  font-size: 2.1rem;
-  text-align: center;
-  -webkit-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s; }
-  .social--header .contact-btn {
-    cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 1rem;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.95); }
 
 /* *** HEADER *** */
 .about {

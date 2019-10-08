@@ -1,4 +1,4 @@
-`/* Fade in body */
+/* Fade in body */
 (() => {
     document.getElementById('body').style.opacity = 1;
 })();
